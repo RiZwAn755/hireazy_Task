@@ -25,4 +25,3 @@ This is a simple two-user interview simulation app built entirely with frontend 
 - **Mobile Responsiveness:** Further optimize the UI for mobile devices.
 
 ---
-Feel free to reach out if you want to extend this project or need help deploying it!

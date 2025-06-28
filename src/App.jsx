@@ -4,6 +4,9 @@ import RoleSelector from './components/RoleSelector';
 import ChatRoom from './components/ChatRoom';
 import FileUpload from './components/FileUpload';
 import InterviewControls from './components/InterviewControls';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function App() {
@@ -15,6 +18,8 @@ function App() {
 
   const handleSelectRole = (selectedRole) => {
     setRole(selectedRole);
+      toast.info('Start the interview');
+    
   };
 
   const handleSend = (text) => {
@@ -26,6 +31,7 @@ function App() {
   };
 
   const handleStart = () => {
+    
     setIsStarted(true);
     setIsEnded(false);
     setMessages([]);
@@ -39,6 +45,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <ToastContainer/>
       <h1>Interview Simulation Room</h1>
       {!role ? (
         <RoleSelector onSelectRole={handleSelectRole} />
@@ -52,6 +59,7 @@ function App() {
             <FileUpload onFileUpload={handleFileUpload} disabled={!isStarted || isEnded} file={file} />
           )}
           <ChatRoom
+          
             messages={messages}
             onSend={handleSend}
             role={role}

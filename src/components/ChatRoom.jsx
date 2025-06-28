@@ -26,6 +26,7 @@ const ChatRoom = ({ messages, onSend, role, disabled }) => {
         ))}
         <div ref={messagesEndRef} />
       </div>
+      
       <form className="chat-input" onSubmit={handleSend}>
         <input
           type="text"
