@@ -30,7 +30,7 @@ A React-based application to simulate interviews between an interviewer and a ca
    ```
 
 4. **Open in browser**
-   Visit [http://localhost:3000](http://localhost:3000)
+   Visit [http://localhost:3000](http://localhost:5173)
 
 ## Future Improvements
 
@@ -45,4 +45,4 @@ A React-based application to simulate interviews between an interviewer and a ca
 
 ---
 
-**Author:**
+**Author:*Mohammad Rizwan* 
