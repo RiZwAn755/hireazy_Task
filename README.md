@@ -1,27 +1,48 @@
-# Hireazy Interview Simulation Room
+# Hireazy - Interview Simulation Room
 
-## Tech Stack
-- **React** (with Vite) for fast, modern frontend development
-- **TailwindCSS** for utility-first, responsive styling
-- **JavaScript (JSX)** for component-based UI
+A React-based application to simulate interviews between an interviewer and a candidate. The app features role selection, chat functionality, file upload for interviewers, and interview session controls.
 
-## How the Solution Works
-This is a simple two-user interview simulation app built entirely with frontend tools (no backend required). When you open the app:
+## Features
 
-1. **Role Selection:** You choose to be either the Interviewer or the Candidate.
-2. **Start/End Interview:** You can start or end the interview session using the provided controls.
-3. **Chat Functionality:** Both users can send and view text messages in a chat interface, with messages labeled by role.
-4. **File Upload (Interviewer Only):** If you are the Interviewer, you can upload a PDF or TXT file. The file name is displayed in the UI (but not actually uploaded to a server).
-5. **Minimal, Clean Design:** The UI is styled with TailwindCSS for a modern, clean look.
+- **Role Selection:** Choose to be an Interviewer or Candidate.
+- **Interview Controls:** Start and end interview sessions.
+- **Chat Room:** Real-time chat between participants.
+- **File Upload:** Interviewer can upload files for the candidate.
+- **Toast Notifications:** Get notified when the interview starts.
+- **Session End Message:** Clear indication when the interview ends.
 
-**Note:** Since this is a frontend-only demo, there is no real-time sync or backend. The app simulates a 1:1 interview experience on a single device/browser.
+## Getting Started
 
-## What I'd Improve With More Time
-- **Real 1:1 Experience:** Add a backend (e.g., Firebase, Supabase, or Node.js) to enable real-time chat and file sharing between two users in different locations.
-- **Authentication:** Allow users to log in and join interview rooms securely.
-- **Persistent Storage:** Store chat history and uploaded files for later review.
-- **Enhanced File Sharing:** Allow Candidates to view/download files uploaded by the Interviewer.
-- **Video/Audio Support:** Add video or audio call features for a more realistic interview simulation.
-- **Mobile Responsiveness:** Further optimize the UI for mobile devices.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd Hireazy
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+4. **Open in browser**
+   Visit [http://localhost:3000](http://localhost:3000)
+
+## Future Improvements
+
+- User authentication
+- Persistent chat history
+- Video/audio interview support
+- Question bank for interviewers
+- Timer and feedback system
+- Multiple interview rooms
+- Export chat transcripts
+- Enhanced UI and dark mode
 
 ---
+
+**Author:**
